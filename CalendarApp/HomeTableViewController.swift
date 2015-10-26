@@ -10,13 +10,13 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
 
-    
+    // Array to store all of the events that appear in home screen
     var events:NSMutableArray = NSMutableArray();
-    
+    // Will load every time
     override func viewDidAppear(animated: Bool) {
         let userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         let eventListUserDefault:NSMutableArray! = userDefaults.objectForKey("eventList") as? NSMutableArray
-        
+        // load and fill table
         if (eventListUserDefault != nil) {
             events = eventListUserDefault
         }
@@ -40,18 +40,20 @@ class HomeTableViewController: UITableViewController {
     }
 // added comment
     // MARK: - Table view data source
+    
+    //Just need one line of text in each cell
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    // Keep as many rows as the amount of events currently in array
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return events.count
     }
 
-    
+    //Display the text of the event/ event title in list
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
@@ -108,6 +110,8 @@ class HomeTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
+        
+        // For when user clicks on an event - prepares for the detailed page
         if (segue.identifier == "ShowSpecificEvent"
             ) {
                 let selectedIndexPath:NSIndexPath = self.tableView.indexPathForSelectedRow!

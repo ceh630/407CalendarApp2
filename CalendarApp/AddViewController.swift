@@ -9,6 +9,8 @@
 import UIKit
 
 class AddViewController: UIViewController {
+    
+    // The event and title field that suer is allowed to change to add an event
 
     @IBOutlet weak var EventTitle: UITextField! = UITextField()
     @IBOutlet weak var NotesField: UITextView! = UITextView()
@@ -25,16 +27,17 @@ class AddViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    // Saves the data and enters it into the main event list on home screen, sends back to hoem screen when pressed
     @IBAction func SaveButton(sender: AnyObject) {
         let userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         var eventList:NSMutableArray! = userDefaults.objectForKey("eventList") as? NSMutableArray
         
-        
+        // Sets data/ name of events into the 'dictionary'
         let dataSet:NSMutableDictionary = NSMutableDictionary()
         dataSet.setObject(EventTitle.text!,forKey: "event")
         dataSet.setObject(NotesField.text!,forKey: "notes")
         
+        //fills and updates array with all of the data entered / events entered
         if ((eventList) != nil) {
             let newList:NSMutableArray = NSMutableArray();
             
