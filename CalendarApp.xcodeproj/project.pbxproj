@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		5B126E441BCC23D500BAD547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B126E431BCC23D500BAD547 /* AppDelegate.swift */; };
-		5B126E461BCC23D500BAD547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B126E451BCC23D500BAD547 /* ViewController.swift */; };
 		5B126E491BCC23D500BAD547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B126E471BCC23D500BAD547 /* Main.storyboard */; };
 		5B126E4B1BCC23D500BAD547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B126E4A1BCC23D500BAD547 /* Assets.xcassets */; };
 		5B126E4E1BCC23D500BAD547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B126E4C1BCC23D500BAD547 /* LaunchScreen.storyboard */; };
+		5B78DE741BDBFDB600154D82 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78DE731BDBFDB600154D82 /* HomeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5B78DE761BDBFE5E00154D82 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78DE751BDBFE5E00154D82 /* AddViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5B78DE781BDBFE6E00154D82 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78DE771BDBFE6E00154D82 /* EditViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5B78DE7A1BDCA89700154D82 /* ChangesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78DE791BDCA89700154D82 /* ChangesViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B126E401BCC23D500BAD547 /* CalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B126E431BCC23D500BAD547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B126E451BCC23D500BAD547 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B126E481BCC23D500BAD547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B126E4A1BCC23D500BAD547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B126E4D1BCC23D500BAD547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B126E4F1BCC23D500BAD547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B78DE731BDBFDB600154D82 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		5B78DE751BDBFE5E00154D82 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		5B78DE771BDBFE6E00154D82 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		5B78DE791BDCA89700154D82 /* ChangesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				5B126E431BCC23D500BAD547 /* AppDelegate.swift */,
-				5B126E451BCC23D500BAD547 /* ViewController.swift */,
 				5B126E471BCC23D500BAD547 /* Main.storyboard */,
 				5B126E4A1BCC23D500BAD547 /* Assets.xcassets */,
 				5B126E4C1BCC23D500BAD547 /* LaunchScreen.storyboard */,
 				5B126E4F1BCC23D500BAD547 /* Info.plist */,
+				5B78DE731BDBFDB600154D82 /* HomeTableViewController.swift */,
+				5B78DE751BDBFE5E00154D82 /* AddViewController.swift */,
+				5B78DE771BDBFE6E00154D82 /* EditViewController.swift */,
+				5B78DE791BDCA89700154D82 /* ChangesViewController.swift */,
 			);
 			path = CalendarApp;
 			sourceTree = "<group>";
@@ -134,8 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B126E461BCC23D500BAD547 /* ViewController.swift in Sources */,
+				5B78DE781BDBFE6E00154D82 /* EditViewController.swift in Sources */,
+				5B78DE741BDBFDB600154D82 /* HomeTableViewController.swift in Sources */,
+				5B78DE761BDBFE5E00154D82 /* AddViewController.swift in Sources */,
 				5B126E441BCC23D500BAD547 /* AppDelegate.swift in Sources */,
+				5B78DE7A1BDCA89700154D82 /* ChangesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +295,7 @@
 				5B126E541BCC23D500BAD547 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
